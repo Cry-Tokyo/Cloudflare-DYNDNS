@@ -1,4 +1,4 @@
-# Cloudflare-DYNDNS-script
+# Cloudflare-DYNDNS
 
 Script that uses Cloudflare's API to implement DDNS(Dynamic Domain Name Service)
 
