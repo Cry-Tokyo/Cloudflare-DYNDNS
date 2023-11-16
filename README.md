@@ -19,6 +19,20 @@ End with an example of getting some data out of the system or using it for a lit
 DDNS
 ```
 
+### Configuration
+
+creds
+```
+
+```
+
+ip
+```
+dig
+curl
+upnpc -s
+```
+
 ## Deployment
 
 you will ussaly not mannuely run this script but use a crontab to run this once a day , 6 hours, hour , or mins as its quite unlickly ur isp will re-lease a new ip everyday
