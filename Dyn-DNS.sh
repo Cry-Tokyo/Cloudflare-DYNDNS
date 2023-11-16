@@ -7,12 +7,14 @@ ip1=$(curl -s ifconfig.io)
 ip2=$(curl -s icanhazip.com)
 ip3=$(curl -s checkip.amazonaws.com)
 if [[ "$ip1" = "$ip2" && "$ip2" = "$ip3" ]]; then
+    echo "your public IP is $ip1"
     GET=$(curl -s -X GET "https://api.cloudflare.com/client/v4/zones/$zone_id/dns_records?type=A&name=$record_name" \
     -H "X-Auth-Email: $auth_email" \
     -H "Authorization: Bearer $auth_key" \
     -H "Content-Type: application/json")
     CF_ip=$(echo "$GET" | sed -E 's/.*"content":"(([0-9]{1,3}\.){3}[0-9]{1,3})".*/\1/')
     if [ "$ip3" = "$CF_ip" ]; then
+        echo "Domain is pointing to correct IP"
         exit 0
     fi
     record_id=$(echo "$GET" | sed -E 's/.*"id":"([A-Za-z0-9_]+)".*/\1/')
@@ -21,5 +23,6 @@ if [[ "$ip1" = "$ip2" && "$ip2" = "$ip3" ]]; then
      -H "Authorization: Bearer $auth_key" \
      -H "Content-Type: application/json" \
      --data "{\"type\":\"A\",\"name\":\"$record_name\",\"content\":\"$ip3\"}"
+    echo "Domain is pointing to current correct public IP"
 fi
 exit 0
