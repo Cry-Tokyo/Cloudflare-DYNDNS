@@ -24,5 +24,7 @@ if [[ "$ip1" = "$ip2" && "$ip2" = "$ip3" ]]; then
      -H "Content-Type: application/json" \
      --data "{\"type\":\"A\",\"name\":\"$record_name\",\"content\":\"$ip3\"}"
     echo "Domain is pointing to current correct public IP"
+else
+    echo "one of the return public ip address are wrong, there may have been a issue with the request or someone intenflly gave you a false ip address"
 fi
 exit 0
