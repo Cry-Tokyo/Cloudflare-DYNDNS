@@ -5,7 +5,7 @@ Script that uses Cloudflare's API to implement DDNS(Dynamic Domain Name Service)
 ### Installing
 
 
-Clone Cloudflare-DYNDNS.sh:
+Clone Cloudflare-DYNDNS:
 
 ```
 git clone https://github.com/MCgit2024/Cloudflare-DYNDNS-script.git DDNS
