@@ -17,16 +17,26 @@ chmod 700 Dyn-DNS.sh
 ### Configuration
 
 Credentials:
-![]()
 ```
-zone_id="" #p
+auth_email="" #
+record_name="" #
 ```
 
+![]()
+```
+zone_id="" #overview
+```
+![]()
+```
+auth_key"" #api key
+```
 ip
 ```
-dig
-curl
-upnpc -s
+ip=(
+  dig
+  curl
+  upnpc -s
+)
 ```
 
 ## Deployment
