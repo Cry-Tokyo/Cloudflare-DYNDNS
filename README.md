@@ -39,6 +39,8 @@ cloudflare api
 
 ## Contributing
 
+feel free to open up a issue if you any chnages or fixes you seem nessarcry 
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
