@@ -16,9 +16,10 @@ chmod 700 Dyn-DNS.sh
 
 ### Configuration
 
-creds
+Credentials:
+![]()
 ```
-
+zone_id="" #p
 ```
 
 ip
