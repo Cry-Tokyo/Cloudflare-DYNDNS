@@ -11,7 +11,6 @@ Clone Cloudflare-DYNDNS:
 git clone https://github.com/MCgit2024/Cloudflare-DYNDNS-script.git DDNS
 cd DDNS
 chmod 700 Dyn-DNS.sh
-
 ```
 
 
