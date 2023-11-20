@@ -98,7 +98,7 @@ Save the file.
 ```
 ## Contributing
 
-Feel free to open up a issue if you have any chnages or fixes you deem necessary. 
+Feel free to open up an issue if you have any changes or fixes you deem necessary. 
 
 ## License
 
