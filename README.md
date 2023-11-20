@@ -21,18 +21,18 @@ chmod 700 Dyn-DNS.sh
 auth_email="" #
 record_name="" #
 ```
-### keys
+### Keys
+```
+zone_id="" #ussaly found in your domain's overview
+```
+<img src="https://raw.githubusercontent.com/MCgit2024/stuff/main/zone_id.png" height="500">
 
-ussaly found in your domain's overview
-![](https://raw.githubusercontent.com/MCgit2024/stuff/main/zone_id.png)
-```
-zone_id="" #overview
-```
-![]()
 ```
 auth_key"" #api key
 ```
-ip
+<img src="" height="500">
+
+### Public Ip-Address
 ```
 ip=(
   dig
@@ -40,7 +40,7 @@ ip=(
   upnpc -s
 )
 ```
-log
+### Logs
 ```
 logpath="/var/log/DDNS.log"
 ```
