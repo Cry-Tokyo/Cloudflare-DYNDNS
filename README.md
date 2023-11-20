@@ -35,7 +35,7 @@ you could use curl, dig (aka nslookup), or upnpc to get your current public ip.
 ```
 ip=(
   dig #
-  curl -s ifconfig.io # You can curl any thing as long as it gives you the respon
+  curl -s ifconfig.io # You can curl any thing as long as it gives you the responpse using HTTPS
   upnpc -s | grep ^ExternalIPAddress #**DO NOT USE THIS** UPnP is inherntaly insecure only use if configured correctly 
 )
 ```
