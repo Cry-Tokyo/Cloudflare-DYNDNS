@@ -16,7 +16,7 @@ chmod 700 Dyn-DNS.sh
 
 ### Configuration
 
-Credentials:
+# Credentials:
 ```
 auth_email="" #
 record_name="" #
