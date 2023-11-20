@@ -16,7 +16,7 @@ $ chmod 700 Dyn-DNS.sh
 auth_email="" #
 record_name="" #
 ```
-### Keys
+### Tokens
 Your **Zone ID** can be found in your Domain's overview
 
 https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/
