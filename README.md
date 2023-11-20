@@ -49,6 +49,7 @@ logpath="/var/log/DDNS.log"
 you will ussaly not mannuely run this script but use a crontab to run this once a day , 6 hours, hour , or mins as its quite unlickly ur isp will re-lease a new ip everyday
 ### systemd/timers
 What ever user creates and enables this systemd timer, the script will run with that user's privileges so run these commands with root or a user with the least amount of privliges.
+
 Create a service unit:
 ```
 $ vi /etc/systemd/system/Dyn-DNS.service
