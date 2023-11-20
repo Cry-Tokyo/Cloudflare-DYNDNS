@@ -34,7 +34,7 @@ In order for this script to work the **IP** must be in the format of **"xxx.xxx.
 you could use curl, dig (aka nslookup), or upnpc to get your current public ip but make sure it is in the correct format.
 ```
 ip=(
-  dig #
+  dig +short myip.opendns.com @resolver1.opendns.com #
   curl -s ifconfig.io # You can curl any thing as long as it gives you the responpse using HTTPS
   upnpc -s | grep ^ExternalIPAddress #**DO NOT USE THIS** UPnP is inherntaly insecure only use if configured correctly 
 )
