@@ -43,11 +43,11 @@ logpath="/var/log/DDNS.log"
 you will ussaly not mannuely run this script but use a crontab to run this once a day , 6 hours, hour , or mins as its quite unlickly ur isp will re-lease a new ip everyday
 ### systemd/timers
 ```
-
+$ 
 ```
 ### cron.d
 ```
-cron
+$ cron
 ```
 ## Built With
 
