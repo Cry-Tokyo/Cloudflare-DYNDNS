@@ -12,6 +12,7 @@ $ chmod 700 Dyn-DNS.sh
 ## Configuration
 
 ### Credentials
+Use your email tied to your Domain and your record_name should just be your Domain's name.
 ```
 auth_email="" #
 record_name="" #
