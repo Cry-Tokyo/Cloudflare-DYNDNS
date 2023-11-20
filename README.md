@@ -54,7 +54,7 @@ $
 ### cron.d
 Run these commands with root or a user with the least amount of privliges as cron jobs are typically executed with the permissions of the user who created them.
 ```
-# sudo crontab -e # This will open your editor being VI or nano
+# crontab -e # This will open your editor being VI or nano
 ```
 Add this line to the file: 
 
@@ -62,7 +62,7 @@ Add this line to the file:
 
 Save the file.
 ```
-# sudo crontab -l # Now verfy your entry has saved and is one of your current cron jobs
+# crontab -l # Now verfy your entry has saved and is one of your current cron jobs
 30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh
 ```
 ## Built With
