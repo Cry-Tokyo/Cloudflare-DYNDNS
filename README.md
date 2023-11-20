@@ -98,8 +98,8 @@ Save the file.
 ```
 ## Contributing
 
-feel free to open up a issue if you any chnages or fixes you seem nessarcry 
+Feel free to open up a issue if you have any chnages or fixes you deem necessary. 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
