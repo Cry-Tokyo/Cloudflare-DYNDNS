@@ -59,7 +59,7 @@ Add this line to your file:
 
 `30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh`
 ```
-# sudo crontab -l # Now make sure your verfy if it saved and one of your current cron jobs
+# sudo crontab -l # Now verfy your entry has saved and is one of your current cron jobs
 30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh
 ```
 ## Built With
