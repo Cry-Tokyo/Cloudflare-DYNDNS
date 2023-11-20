@@ -52,7 +52,7 @@ What ever user creates and enables this systemd timer, the script will run with 
 
 Create a service unit:
 ```
-$ vi /etc/systemd/system/Dyn-DNS.service
+# vi /etc/systemd/system/Dyn-DNS.service
 [Unit]
 Description=Cloudflare Dyn-DNS script, should be ran around once day but use at your discreation
 
@@ -62,7 +62,25 @@ ExecStart=/path-to-your-script/DDNS/myscript.sh
 
 ```
 Create a Timer Unit:
+```
+# vi /etc/systemd/system/Dyn-DNS.timer
+[Unit]
+Description=Timer for Cloudflare Dyn-DNS script
 
+[Timer]
+OnCalendar=*-*-* 11:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+```
+Save the file, reload Systemd, and start and enable the timer.
+```
+# systemctl daemon-reload
+# systemctl start Dyn-DNS.timer
+# systemctl enable Dyn-DNS.timer
+# systemctl status myscript.timer # Make sure the timer was saved and is running
+```
 ### cron.d
 Run these commands with root or a user with the least amount of privliges as cron jobs are typically executed with the permissions of the user who created them.
 ```
