@@ -22,10 +22,10 @@ https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/
 ```
 zone_id="" # Copy and Paste it here 
 ```
-Best Pratice is to make a api token to so it could only be used to change only the record pointing towards your domain
+You should create an **API token** for the sole purpose of changing the Domain Record. This can be found in your Cloudflare dashboard, go to My Profile > API Tokens
 https://developers.cloudflare.com/fundamentals/api/get-started/create-token/
 ```
-auth_key"" #api key
+auth_key"" # Copy and Paste it here
 ```
 ### Public Ip-Address
 you could use curl dig(nslookup) or upnpc to get your current public ip
