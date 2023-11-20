@@ -52,7 +52,7 @@ you will ussaly not mannuely run this script but use a crontab to run this once 
 $ 
 ```
 ### cron.d
-If you have your own way of running cron jobs feel free to do that but for a simple way to get cron jobs running is to run these commands with root or a user with defiend privliges as cron jobs are typically executed with the permissions of the user who created them.
+Run these commands with root or a user with the least amount of privliges as cron jobs are typically executed with the permissions of the user who created them.
 ```
 # sudo crontab -e # This will open your editor being VI or nano
 ```
