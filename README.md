@@ -53,7 +53,7 @@ $
 ```
 ### cron.d
 ```
-# sudo crontab -e # This will open your editor being VI or nano with root priviglies, you may run this command with whatever user you choose but it will run with those users persmisons
+# sudo crontab -e # This will open your editor being VI or nano
 ```
 Add this line to your file: 
 
