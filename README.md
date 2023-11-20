@@ -61,6 +61,7 @@ Type=simple
 ExecStart=/path-to-your-script/DDNS/myscript.sh
 
 ```
+Create a Timer Unit:
 
 ### cron.d
 Run these commands with root or a user with the least amount of privliges as cron jobs are typically executed with the permissions of the user who created them.
