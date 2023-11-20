@@ -23,7 +23,7 @@ https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/
 ```
 zone_id="" # Copy and Paste it here 
 ```
-You should create an **API token** for the sole purpose of changing the Domain Record. This can be found in your Cloudflare dashboard, go to **My Profile > API Tokens**
+You should create an **API token** for the sole purpose of changing the Domain Record. This can be found in your Cloudflare dashboard, go to **My Profile > API Tokens > Create Tokens**
 
 https://developers.cloudflare.com/fundamentals/api/get-started/create-token/
 ```
