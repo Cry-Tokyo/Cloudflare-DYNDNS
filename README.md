@@ -22,10 +22,11 @@ auth_email="" #
 record_name="" #
 ```
 ### Keys
+Your zone_id is found in your Domain's overview
+https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/
 ```
 zone_id="" #ussaly found in your domain's overview
 ```
-<img src="https://raw.githubusercontent.com/MCgit2024/stuff/main/zone_id.png" height="500">
 
 ```
 auth_key"" #api key
