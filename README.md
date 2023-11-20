@@ -20,7 +20,7 @@ record_name="" #
 Your **Zone ID** can be found in your Domain's overview
 https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/
 ```
-zone_id="" #ussaly found in your domain's overview
+zone_id="" # Copy and Paste it here 
 ```
 Best Pratice is to make a api token to so it could only be used to change only the record pointing towards your domain
 https://developers.cloudflare.com/fundamentals/api/get-started/create-token/
