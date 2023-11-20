@@ -33,9 +33,9 @@ auth_key"" # Copy and Paste it here
 you could use curl dig(nslookup) or upnpc to get your current public ip
 ```
 ip=(
-  dig
-  curl
-  upnpc -s
+  dig #
+  curl #
+  upnpc -m eth0 -s #***DO NOT USE THIS*** UPnP is inherntaly insecure only use if configured correctly 
 )
 ```
 ### Logs
