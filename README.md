@@ -22,18 +22,17 @@ auth_email="" #
 record_name="" #
 ```
 ### Keys
-Your zone_id can be found in your Domain's overview:
+Your **Zone ID** can be found in your Domain's overview:
 https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/
 ```
 zone_id="" #ussaly found in your domain's overview
 ```
-
+Best Pratice is to make a api token to so it could only be used to change only the record pointing towards your domain
 ```
 auth_key"" #api key
 ```
-<img src="" height="500">
-
 ### Public Ip-Address
+you could use curl dig(nslookup) or upnpc to get your current public ip
 ```
 ip=(
   dig
