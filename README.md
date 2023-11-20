@@ -49,7 +49,7 @@ logpath="/var/log/DDNS.log"
 ## Deployment
 
 You can use whatever job schedular you choose, just make sure you dont over abuse Cloudflare's api or you may be ratelimited, once a day is more then enough time between Ip leases. 
-### systemd/timers
+### system.d/timers
 What ever user creates and enables this systemd timer, the script will run with that user's privileges so run these commands with root or a user with the least amount of privliges.
 
 Create a service unit:
