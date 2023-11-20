@@ -21,7 +21,8 @@ Credentials:
 auth_email="" #
 record_name="" #
 ```
-
+Zone ID:
+ussaly found in your domain's overview
 ![](https://raw.githubusercontent.com/MCgit2024/stuff/main/zone_id.png)
 ```
 zone_id="" #overview
