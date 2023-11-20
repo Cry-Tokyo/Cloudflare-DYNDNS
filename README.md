@@ -53,14 +53,11 @@ $
 ```
 ### cron.d
 ```
-$ crontab -e # This will open your editor being VI or nano so save when you are done
+# sudo crontab -e # This will open your editor being VI or nano with root priviglies, you may run this command with whatever user you choose but it will run with those users persmisons
 ```
-`30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh
-
-
-`
-
-$ crontab -l # Now make sure your verfy if it saved and see if it is one of your current cron jobs
+Add this line to your file: 
+`30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh`
+$ crontab -l # Now make sure your verfy if it saved and one of your current cron jobs
 
 ```
 ## Built With
