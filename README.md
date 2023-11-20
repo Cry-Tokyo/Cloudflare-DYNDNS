@@ -31,7 +31,7 @@ auth_key"" # Copy and Paste it here
 ```
 ### Public Ip-Address
 In order for this script to work the **IP** must be in the format of **"xxx.xxx.xxx.xxx"** (for example 104.130.1.209) 
-you could use curl, dig (aka nslookup), or upnpc to get your current public ip.
+you could use curl, dig (aka nslookup), or upnpc to get your current public ip but make sure it is in the correct format.
 ```
 ip=(
   dig #
