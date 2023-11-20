@@ -59,6 +59,8 @@ Run these commands with root or a user with the least amount of privliges as cro
 Add this line to the file: 
 
 `30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh`
+
+Save the file.
 ```
 # sudo crontab -l # Now verfy your entry has saved and is one of your current cron jobs
 30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh
