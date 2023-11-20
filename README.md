@@ -56,7 +56,7 @@ Run these commands with root or a user with the least amount of privliges as cro
 ```
 # sudo crontab -e # This will open your editor being VI or nano
 ```
-Add this line to your file: 
+Add this line to the file: 
 
 `30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh`
 ```
