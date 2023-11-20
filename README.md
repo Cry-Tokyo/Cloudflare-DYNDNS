@@ -54,8 +54,11 @@ $
 ### cron.d
 ```
 $ crontab -e # This will open your editor being VI or nano so save when you are done
+```
+`30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh
 
-30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh
+
+`
 
 $ crontab -l # Now make sure your verfy if it saved and see if it is one of your current cron jobs
 
