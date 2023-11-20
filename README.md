@@ -18,7 +18,6 @@ record_name="" #
 ```
 ### Keys
 Your **Zone ID** can be found in your Domain's overview
-
 https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/
 ```
 zone_id="" #ussaly found in your domain's overview
