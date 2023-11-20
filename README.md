@@ -59,7 +59,6 @@ Description=Cloudflare Dyn-DNS script, should be ran around once day but use at 
 [Service]
 Type=simple
 ExecStart=/path-to-your-script/DDNS/myscript.sh
-
 ```
 Create a Timer Unit:
 ```
