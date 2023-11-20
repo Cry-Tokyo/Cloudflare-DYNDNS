@@ -22,7 +22,7 @@ auth_email="" #
 record_name="" #
 ```
 
-![https://github.com/MCgit2024/stuff/blob/41df10df790605a1cfb00bf687e889a189dbd796/zone_id.png]()
+![](https://github.com/MCgit2024/stuff/blob/41df10df790605a1cfb00bf687e889a189dbd796/zone_id.png)
 ```
 zone_id="" #overview
 ```
