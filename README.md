@@ -1,6 +1,6 @@
 # Cloudflare-DYNDNS
 
-Script that uses Cloudflare's API to implement DDNS(Dynamic Domain Name Service)
+Bash Script that uses Cloudflare's API to implement DDNS(Dynamic Domain Name Service).
 
 ## Installing
 
