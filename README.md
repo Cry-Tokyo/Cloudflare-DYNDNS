@@ -30,12 +30,13 @@ https://developers.cloudflare.com/fundamentals/api/get-started/create-token/
 auth_key"" # Copy and Paste it here
 ```
 ### Public Ip-Address
-you could use curl dig(nslookup) or upnpc to get your current public ip
+In order for this script to work the **IP** must be in the format of **"xxx.xxx.xxx.xxx"** (for example 104.130.1.209) 
+you could use curl, dig (aka nslookup), or upnpc to get your current public ip.
 ```
 ip=(
   dig #
-  curl #
-  upnpc -m eth0 -s #***DO NOT USE THIS*** UPnP is inherntaly insecure only use if configured correctly 
+  curl -s ifconfig.io # You can curl any thing as long as it gives you the respon
+  upnpc -s | grep ^ExternalIPAddress #**DO NOT USE THIS** UPnP is inherntaly insecure only use if configured correctly 
 )
 ```
 ### Logs
