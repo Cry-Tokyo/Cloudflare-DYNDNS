@@ -37,7 +37,7 @@ you could use curl, dig (aka nslookup), or upnpc to get your current public ip b
 ip=(
   curl -s ifconfig.io # You can curl any thing as long as it gives you the responpse using HTTPS
   dig +short myip.opendns.com @resolver1.opendns.com # You can dig anything as long as dig is using etheir DoHTTPS or DoTLS
-  upnpc -s | grep ^ExternalIPAddress #**DO NOT USE THIS** UPnP is inherntaly insecure only use if configured correctly 
+  upnpc -s | grep ^ExternalIPAddress # **DO NOT USE THIS** UPnP is inherntaly insecure only use if configured correctly 
 )
 ```
 ### Logs
@@ -53,7 +53,12 @@ $
 ```
 ### cron.d
 ```
-$ cron
+$ crontab -e # This will open your editor being VI or nano so save when you are done
+
+30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh
+
+$ crontab -l # Now make sure your verfy if it saved and see if it is one of your current cron jobs
+
 ```
 ## Built With
 
