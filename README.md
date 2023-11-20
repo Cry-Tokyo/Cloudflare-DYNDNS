@@ -52,6 +52,7 @@ you will ussaly not mannuely run this script but use a crontab to run this once 
 $ 
 ```
 ### cron.d
+If you have your onw way of running cron jobs feel free to do that but for a simple way to get cron jobs set run these commands with root or a user with least privliges
 ```
 # sudo crontab -e # This will open your editor being VI or nano
 ```
