@@ -2,7 +2,7 @@
 
 Script that uses Cloudflare's API to implement DDNS(Dynamic Domain Name Service)
 
-### Installing
+## Installing
 
 
 Clone Cloudflare-DYNDNS:
@@ -14,14 +14,14 @@ chmod 700 Dyn-DNS.sh
 ```
 
 
-### Configuration
+## Configuration
 
-# Credentials:
+### Credentials
 ```
 auth_email="" #
 record_name="" #
 ```
-Zone ID:
+### keys
 
 ussaly found in your domain's overview
 ![](https://raw.githubusercontent.com/MCgit2024/stuff/main/zone_id.png)
