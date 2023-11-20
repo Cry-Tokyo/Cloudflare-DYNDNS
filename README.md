@@ -48,9 +48,18 @@ logpath="/var/log/DDNS.log"
 ## Deployment
 you will ussaly not mannuely run this script but use a crontab to run this once a day , 6 hours, hour , or mins as its quite unlickly ur isp will re-lease a new ip everyday
 ### systemd/timers
+What ever user creates and enables this systemd timer, the script will run with that user's privileges so run these commands with root or a user with the least amount of privliges.
 ```
-$ 
+$ vi /etc/systemd/system/Dyn-DNS.service
+[Unit]
+Description=Cloudflare Dyn-DNS script, should be ran around once day but use at your discreation
+
+[Service]
+Type=simple
+ExecStart=/path-to-your-script/DDNS/myscript.sh
+
 ```
+
 ### cron.d
 Run these commands with root or a user with the least amount of privliges as cron jobs are typically executed with the permissions of the user who created them.
 ```
