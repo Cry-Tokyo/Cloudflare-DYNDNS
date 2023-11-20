@@ -3,6 +3,7 @@
 Script that uses Cloudflare's API to implement DDNS(Dynamic Domain Name Service)
 
 ## Installing
+
 Clone Cloudflare-DYNDNS:
 ```
 $ git clone https://github.com/MCgit2024/Cloudflare-DYNDNS-script.git DDNS
@@ -46,6 +47,7 @@ Logs will be pushed to whatever diretory and file is stated here.
 logpath="/var/log/DDNS.log"
 ```
 ## Deployment
+
 you will ussaly not mannuely run this script but use a crontab to run this once a day , 6 hours, hour , or mins as its quite unlickly ur isp will re-lease a new ip everyday
 ### systemd/timers
 What ever user creates and enables this systemd timer, the script will run with that user's privileges so run these commands with root or a user with the least amount of privliges.
@@ -94,10 +96,6 @@ Save the file.
 # crontab -l # Now verfy your entry has saved and is one of your current cron jobs
 30 11 * * * /path-to-your-script/DDNS/Dyn-DNS.sh
 ```
-## Built With
-
-cloudflare api
-
 ## Contributing
 
 feel free to open up a issue if you any chnages or fixes you seem nessarcry 
@@ -105,8 +103,3 @@ feel free to open up a issue if you any chnages or fixes you seem nessarcry
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
-
-## Acknowledgments
-
-cloudflare docs
-
