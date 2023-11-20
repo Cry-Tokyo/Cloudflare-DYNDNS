@@ -14,17 +14,17 @@ $ chmod 700 Dyn-DNS.sh
 ### Credentials
 Use your email tied to your Domain and your record_name should just be your Domain's name.
 ```
-auth_email="" #
-record_name="" #
+auth_email="" # myemail@mail.com
+record_name="" # mydomain.org
 ```
 ### Tokens
-Your **Zone ID** can be found in your Domain's overview
+Your **Zone ID** can be found in your Domain's overview.
 
 https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/
 ```
 zone_id="" # Copy and Paste it here 
 ```
-You should create an **API token** for the sole purpose of changing the Domain Record. This can be found in your Cloudflare dashboard, go to **My Profile > API Tokens > Create Tokens**
+You should create an **API token** for the sole purpose of changing the Domain Record. This can be found in your Cloudflare dashboard, go to **My Profile > API Tokens > Create Tokens**.
 
 https://developers.cloudflare.com/fundamentals/api/get-started/create-token/
 ```
@@ -41,6 +41,7 @@ ip=(
 )
 ```
 ### Logs
+Logs will be pushed to whatever diretory and file is stated here.
 ```
 logpath="/var/log/DDNS.log"
 ```
