@@ -1,11 +1,15 @@
 #!/bin/bash
-zone_id="found in overview"
-auth_email="your cloudflare accounts email"
-record_name="your domain name"
-auth_key="found in api or overview"
+auth_email=""
+record_name=""
+zone_id=""
+auth_key=""
 logpath="/var/log/DDNS.log"
 
-ip=("$(curl -s ifconfig.io)" "$(curl -s icanhazip.com)" "$(curl -s checkip.amazonaws.com)")
+ip=(    
+    "$(curl -s ifconfig.io)" 
+    "$(curl -s icanhazip.com)" 
+    "$(curl -s checkip.amazonaws.com)"
+)
 
 log="[`date '+%Y-%m-%d %H:%M:%S:%3N'`] $(whoami): ${ip[@]}\n"
 if [ $(printf "%s\n" "${ip[@]}" | uniq -c | wc -l) -eq 1 ]; then
@@ -16,7 +20,7 @@ if [ $(printf "%s\n" "${ip[@]}" | uniq -c | wc -l) -eq 1 ]; then
     CF_ip=$(echo "$GET" | sed -E 's/.*"content":"(([0-9]{1,3}\.){3}[0-9]{1,3})".*/\1/')
     log+="[`date '+%Y-%m-%d %H:%M:%S:%3N'`] $(whoami): $GET\n"
     if [ $ip = $CF_ip ]; then
-        log+="[`date '+%Y-%m-%d %H:%M:%S:%3N'`] $(whoami): domain record still points to correct ip\n"
+        log+="[`date '+%Y-%m-%d %H:%M:%S:%3N'`] $(whoami): domain record still points to correct ip: $ip\n"
         echo -e "$log" >> "$logpath"
         exit 0
     fi
@@ -26,7 +30,7 @@ if [ $(printf "%s\n" "${ip[@]}" | uniq -c | wc -l) -eq 1 ]; then
      -H "Authorization: Bearer $auth_key" \
      -H "Content-Type: application/json" \
      --data "{\"type\":\"A\",\"name\":\"$record_name\",\"content\":\"$ip\"}")
-    log+="[`date '+%Y-%m-%d %H:%M:%S:%3N'`] $(whoami): $PATCH\ndomain record now points to correct ip"
+    log+="[`date '+%Y-%m-%d %H:%M:%S:%3N'`] $(whoami): $PATCH\n[`date '+%Y-%m-%d %H:%M:%S:%3N'`] $(whoami): domain record now points to correct ip\n"
 else
     log+="[`date '+%Y-%m-%d %H:%M:%S:%3N'`] $(whoami): public ips received do not match possilbe error or attack\n"
 fi
